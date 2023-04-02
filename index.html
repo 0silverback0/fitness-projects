@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Trainer Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Personal Trainer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!-- ABOUT section -->
+
+  <section id="about">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p>We are a team of certified personal trainers who are passionate about helping our clients achieve their fitness goals. With years of experience in the fitness industry, we have developed effective workout programs and nutrition plans that have helped our clients get in the best shape of their lives.</p>
+          <p>Our mission is to inspire and empower our clients to lead healthier, more active lifestyles, and to provide them with the tools and guidance they need to achieve their fitness goals.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="Untitled design (7).svg" alt="About Us" width="100%" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-4">
+          <!-- <h2 class="text-center">Services</h2> -->
+        <div class="service">
+          <i class="fas fa-dumbbell"></i>
+          <h3>Personal Training</h3>
+          <p>Our certified personal trainers will work with you one-on-one to create a personalized workout plan to help you achieve your fitness goals.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="service">
+          <i class="fas fa-utensils"></i>
+          <h3>Nutrition Coaching</h3>
+          <p>Our nutrition experts will help you develop healthy eating habits and create a customized meal plan to support your fitness journey.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="service">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>Fitness Programs</h3>
+          <p>Our fitness programs are designed to help you get fit, lose weight, and feel great. Choose from a variety of programs tailored to your fitness level.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- CALORIE CALCULATOR -->
+  <div class="calculator col-md-4 mx-auto mt-3" id="calculator-2">
+    <h2>Calorie Calculator</h2>
+    <div class="form">
+        <label for="weight">Weight (in kg):</label>
+        <input class="form-control" type="number" id="weight">
+        <label for="height">Height (in cm):</label>
+        <input class="form-control" type="number" id="height">
+        <label for="age">Age:</label>
+        <input class="form-control" type="number" id="age">
+        <button class="btn btn-secondary mt-3" onclick="calculate(2)">Calculate</button>
+    </div>
+    <p>Calories burned: <span id="result-2"></span></p>
+   </div>
+
+   <footer class="text-center mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>About Us</h4>
+          <p>We are a fitness company dedicated to helping our clients achieve their fitness goals through personalized training and nutrition coaching.</p>
+        </div>
+        <div class="col-sm-4">
+          <h4>Services</h4>
+          <ul class="list-unstyled">
+            <li>Personal Training</li>
+            <li>Nutrition Coaching</li>
+            <li>Fitness Programs</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h4>Contact Us</h4>
+          <p>123 Main Street<br>
+          Anytown, USA 12345<br>
+          Phone: 555-555-5555<br>
+          Email: info@fitnesscompany.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>&copy; 2023 Fitness Company. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  </body>
+  </html>

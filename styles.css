@@ -1,0 +1,91 @@
+.calculator:nth-of-type(1) {
+    background-color: #c25151;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    /* margin: 20px; */
+  }
+  
+  .calculator:nth-of-type(1) h2 {
+    margin-top: 0;
+    font-size: 30px;
+    color: #333;
+  }
+  
+  .calculator:nth-of-type(1) label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .calculator:nth-of-type(1) input[type="number"] {
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #333;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .calculator:nth-of-type(1) p {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .calculator:nth-of-type(1) #result1 {
+    font-weight: bold;
+    color: #006699;
+    font-size: 30px;
+  }
+
+
+  /* NAVBAR */
+
+  .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #ff7f50;
+  }
+  .navbar-toggler {
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 0;
+    transition: all 0.4s;
+  }
+  .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler:hover {
+    outline: none;
+  }
+  .navbar-toggler i {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    line-height: 30px;
+    transition: all 0.4s;
+  }
+  .navbar-toggler i.fa-bars {
+    display: block;
+  }
+  .navbar-toggler i.fa-times {
+    display: none;
+  }
+  .navbar-toggler.active i.fa-bars {
+    display: none;
+  }
+  .navbar-toggler.active i.fa-times {
+    display: block;
+  }
